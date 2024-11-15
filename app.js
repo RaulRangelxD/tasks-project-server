@@ -46,13 +46,13 @@ const PORT = process.env.PORT || 3001;
 const app = express();
 const server = createServer(app);
 const io = new Server(server, {
-  cors: { origin: [`http://localhost:${PORT}`, `http://localhost:3000`] },
+  cors: { origin: [`http://localhost:${PORT}`, `http://localhost:3000`, `https://tasks-project-client.onrender.com`, `https://tasks-project-server.onrender.com`] },
   connectionStateRecovery: {},
 });
 app.use(morgan('dev'));
 
 app.use(express.json());
-app.use(cors({ origin: [`http://localhost:${PORT}`, `http://localhost:3000`], credentials: true }));
+app.use(cors({ origin: [`http://localhost:${PORT}`, `http://localhost:3000`, `https://tasks-project-client.onrender.com`, `https://tasks-project-server.onrender.com`], credentials: true }));
 app.use(cookieParser());
 
 createTables();
