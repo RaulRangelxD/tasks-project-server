@@ -1,0 +1,49 @@
+### Get all tasks
+GET http://localhost:3001/tasks
+
+### Get all tasks users
+GET http://localhost:3001/taskUsers
+
+### Get all tasks users
+GET http://localhost:3001/taskUsers/task/1
+
+### Get all tasks by status
+GET http://localhost:3001/tasks/status/pending
+
+### Get tasks by id
+GET http://localhost:3001/tasks/1
+
+### Create Task
+POST http://localhost:3001/tasks
+Content-Type: application/json
+
+{
+  "groupId": 1,
+    "title": "Perro.http",
+    "description": "Post by .http",
+    "status": "pending"
+}
+
+### Create Task user
+POST http://localhost:3001/taskusers
+Content-Type: application/json
+
+{
+  "taskId": 1,
+  "userId": 1
+
+}
+
+### Upgrade Task
+PATCH http://localhost:3001/tasks/update/1
+Content-Type: application/json
+
+{
+    "title": "Perro.http",
+    "description": "Post by .http",
+    "status": "completed"
+}
+
+### Delete Task
+DELETE  http://localhost:3001/taskusers/delete/3
+Content-Type: application/json

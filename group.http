@@ -1,0 +1,34 @@
+### Get all groups
+GET http://localhost:3001/groups
+
+### Get all groups
+GET http://localhost:3001/groupUsers
+
+### Create Group
+POST http://localhost:3001/groups
+Content-Type: application/json
+
+{
+    "title": "Perro.http"
+}
+
+### Create GroupUser
+POST http://localhost:3001/groupUsers
+Content-Type: application/json
+
+{
+    "groupId": 1,
+    "userId": 1
+}
+
+### Upgrade Group
+PATCH http://localhost:3001/groups/update/1
+Content-Type: application/json
+
+{
+    "title": "PerroUpdated.http"
+}
+
+### Delete Task
+DELETE  http://localhost:3001/groups/delete/2
+Content-Type: application/json
