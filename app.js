@@ -58,6 +58,10 @@ app.use(cookieParser())
 createTables()
 // deleteTables();
 
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
 app.use('/users', userRoutes)
 app.use('/auth', authRoutes)
 app.use('/groups', groupRoutes)
