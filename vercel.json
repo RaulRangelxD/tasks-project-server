@@ -10,8 +10,11 @@
     {
       "src": "/(.*)",
       "dest": "app.js",
-
       "methods": ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"]
     }
-  ]
+  ],
+  "env": {
+    "DB_token": "eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MzExNjI5NjMsImlkIjoiY2VjZWU0YTAtMTI0YS00MjU2LWFlYmMtYTRkYWVhY2UxYjY3In0.EOAW_M9NtmMmMSxps1E9xh4Vy2gKz6Jsx8xldcciy7nI0uLRD-RwHR_Nwb4KP8yUB8vnsOTUI-VciK6_a48tAA",
+    "NODE_ENV": "production"
+  }
 }
