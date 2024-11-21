@@ -26,7 +26,7 @@ export const loginUser = async (req, res) => {
       httpOnly: true,
       secure: process.env.NODE_ENV === 'production',
       maxAge: 60 * 60 * 1000,
-      sameSite: 'lax',
+      sameSite: 'none',
     })
 
     return defaultResponse(res, 200, 'Authentication successful', { id: result.rows[0].id, email: result.rows[0].email })
