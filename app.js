@@ -54,6 +54,7 @@ const io = new Server(server, {
       `https://tasks-project-client.vercel.app`,
       `https://tasks-project-server.onrender.com`,
       `https://tasks-project-client.onrender.com`,
+      `https://dapper-kangaroo-cec444.netlify.app`,
     ],
   },
   connectionStateRecovery: {},
@@ -70,6 +71,7 @@ app.use(
       `https://tasks-project-client.vercel.app`,
       `https://tasks-project-server.onrender.com`,
       `https://tasks-project-client.onrender.com`,
+      `https://dapper-kangaroo-cec444.netlify.app`,
     ],
     credentials: true,
   })
